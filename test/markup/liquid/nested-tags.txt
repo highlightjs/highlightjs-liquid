@@ -1,0 +1,12 @@
+{% if customer %}
+  {% for address in customer.addresses %}
+    {% if address.default %}
+      {% assign default_address = address %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% if default_address %}
+    {% render 'address', address: default_address %}
+  {% endif %}
+{% endif %}

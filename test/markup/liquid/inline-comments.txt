@@ -1,0 +1,13 @@
+{% # this is an inline comment %}
+{% assign product = collection.products.first # required args %}
+{%
+  # this is a comment
+  # that spans multiple lines
+%}
+{% liquid
+  # required args
+  assign product = collection.products.first
+
+  # optional args
+  assign should_show_border = should_show_border | default: true
+%}

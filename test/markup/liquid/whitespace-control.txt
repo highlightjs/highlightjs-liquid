@@ -1,0 +1,9 @@
+{%- assign username = "John" -%}
+<div>
+  {{- username -}}
+</div>
+
+{% assign items = collection.products -%}
+{%- for item in items %}
+  {{ item.title }}
+{%- endfor -%}

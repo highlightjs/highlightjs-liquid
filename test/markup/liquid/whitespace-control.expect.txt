@@ -1,0 +1,9 @@
+<span class="hljs-template-tag">{%- assign username = <span class="hljs-string">"John"</span> -%}</span>
+<div>
+  <span class="hljs-template-variable">{{- username -}}</span>
+</div>
+
+<span class="hljs-template-tag">{% assign items = collection.products -%}</span>
+<span class="hljs-template-tag">{%- <span class="hljs-keyword">for</span> item in items %}</span>
+  <span class="hljs-template-variable">{{ item.title }}</span>
+<span class="hljs-template-tag">{%- <span class="hljs-keyword">endfor</span> -%}</span>

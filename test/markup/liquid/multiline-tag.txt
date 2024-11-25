@@ -1,0 +1,9 @@
+{% liquid
+  assign featured_product = all_products['product-handle']
+  assign current_variant = featured_product.selected_or_first_available_variant
+  assign featured_media = current_variant.featured_media | default: featured_product.featured_media
+
+  if featured_media
+    render 'product-media', media: featured_media
+  endif
+%}

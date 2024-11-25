@@ -1,0 +1,9 @@
+{% sections 'header' %}
+
+{% section 'featured-collection' %}
+
+{% render 'product-card',
+  product: product,
+  show_vendor: section.settings.show_vendor,
+  media_aspect_ratio: section.settings.image_ratio
+%}

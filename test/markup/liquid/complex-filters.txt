@@ -1,0 +1,12 @@
+{{ product.title |
+   replace: ' ', '-' |
+   downcase |
+   append: '-' |
+   append: product.id |
+   handle }}
+
+{{ collection.products |
+   where: "type", "Shirt" |
+   sort_by: "price" |
+   map: "title" |
+   join: ", " }}

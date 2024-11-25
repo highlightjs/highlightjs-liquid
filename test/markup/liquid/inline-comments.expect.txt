@@ -1,0 +1,13 @@
+<span class="hljs-template-tag"><span class="hljs-comment"># this is an inline comment</span> %}</span>
+<span class="hljs-template-tag">{% assign product = collection.products.first <span class="hljs-comment"># required args</span> %}</span>
+<span class="hljs-template-tag">{%
+  <span class="hljs-comment"># this is a comment</span>
+  <span class="hljs-comment"># that spans multiple lines</span>
+%}</span>
+<span class="hljs-template-tag">{% liquid
+  <span class="hljs-comment"># required args</span>
+  assign product = collection.products.first
+
+  <span class="hljs-comment"># optional args</span>
+  assign should_show_border = should_show_border | default: true
+%}</span>
