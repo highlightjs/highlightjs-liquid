@@ -112,7 +112,7 @@ export default function(hljs) {
           // Filters as function calls
           {
             className: 'function',
-            begin: '\\|\\s*(' + FILTERS.join('|') + ')\\b(?:\\s*:\\s*[^\\s,|}]+)*',
+            begin: '\\|\\s*(' + FILTERS.join('|') + ')\\b(?:\\s*:[^:\\s,|}]+(?:\\s*:[^:\\s,|}]+)*)?',
             keywords: FILTERS.join(' ')
           }
         ]
@@ -140,7 +140,7 @@ export default function(hljs) {
           },
           {
             className: 'function',
-            begin: '\\|\\s*(' + FILTERS.join('|') + ')\\b(?:\\s*:\\s*[^\\s,|}]+)*',
+            begin: '\\|\\s*(' + FILTERS.join('|') + ')\\b(?:\\s*:[^:\\s,|}]+(?:\\s*:[^:\\s,|}]+)*)?',
             keywords: FILTERS.join(' ')
           }
         ]
