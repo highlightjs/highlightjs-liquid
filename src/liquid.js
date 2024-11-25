@@ -1,6 +1,6 @@
 /*
 Language: Liquid
-Author: Laurel King <laurel.king@shopify.com>
+Author: Laurel King <laurel.king@shopify.com>, Mathieu Legault <mathieu.legault@shopify.com>
 Contributors: N/A
 Description: Shopify's Liquid templating language
 Website: https://shopify.dev/docs/api/liquid
