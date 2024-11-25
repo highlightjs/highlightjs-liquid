@@ -74,8 +74,6 @@ export default function(hljs) {
     name: 'Liquid',
     aliases: ['shopify'],
     case_insensitive: true,
-    // Sublanguage support if you want to embed HTML inside Liquid (optional)
-    subLanguage: 'xml',
     contains: [
       // Handle comments in Liquid
       hljs.COMMENT('{% comment %}', '{% endcomment %}'),
