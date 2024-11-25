@@ -49,11 +49,11 @@ This package is released under the MIT License. See [LICENSE](LICENSE) file for 
 
 ### Author & Maintainer
 
-Laurel King <laurel.king@shopify.com>
-Mathieu Legault <mathieu.legault@shopify.com>
+- Laurel King <laurel.king@shopify.com>
+- Mathieu Legault <mathieu.legault@shopify.com>
 
 ## Links
 
 - The official site for the Highlight.js library is <https://highlightjs.org/>.
 - The Highlight.js GitHub project: <https://github.com/highlightjs/highlight.js>
-- Learn more about Liquid: <https://shopify.dev/docs/api/liquid>
+- Learn more about Liquid: <https://shopify.dev/docs/api/liquid> or <https://shopify.github.io/liquid>

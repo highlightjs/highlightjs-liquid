@@ -3,7 +3,7 @@ Language: Liquid
 Author: Laurel King <laurel.king@shopify.com>, Mathieu Legault <mathieu.legault@shopify.com>
 Contributors: N/A
 Description: Shopify's Liquid templating language
-Website: https://shopify.dev/docs/api/liquid
+Website: https://shopify.dev/docs/api/liquid and https://shopify.github.io/liquid
 */
 
 const IDENT_RE = '[A-Za-z$_][0-9A-Za-z$_]*';
