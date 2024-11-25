@@ -27,7 +27,7 @@ const KEYWORDS_SUBSET = [
 const LITERALS = [
   "true",
   "false",
-  "null"
+  "nil"
 ];
 
 // Objects and Variables
@@ -75,15 +75,15 @@ export default function(hljs) {
     aliases: ['shopify'],
     case_insensitive: true,
     contains: [
-      // Handle comments in Liquid
-      hljs.COMMENT('{% comment %}', '{% endcomment %}'),
-      hljs.COMMENT('{% raw %}', '{% endraw %}'),
+      // Handle comments in Liquid with whitespace control
+      hljs.COMMENT('{%-?\\s*comment\\s*-?%}', '{%-?\\s*endcomment\\s*-?%}'),
+      hljs.COMMENT('{%-?\\s*raw\\s*-?%}', '{%-?\\s*endraw\\s*-?%}'),
 
-      // Parsing Liquid Tags
+      // Parsing Liquid Tags with whitespace control
       {
         className: 'template-tag',
         begin: '{%-?\\s*',
-        end: '-?%}',
+        end: '\\s*-?%}',
         keywords: KEYWORDS.join(' '),
         contains: [
           {
@@ -97,7 +97,7 @@ export default function(hljs) {
           hljs.C_NUMBER_MODE,
           {
             className: 'literal',
-            begin: '\\b(true|false|null)\\b'
+            begin: '\\b(true|false|nil)\\b'
           },
           // Operators & punctuation
           {
@@ -118,17 +118,17 @@ export default function(hljs) {
         ]
       },
 
-      // Parsing Output tags (`{{` `}}`)
+      // Parsing Output tags with whitespace control
       {
         className: 'template-variable',
-        begin: '{{-?',
-        end: '-?}}',
+        begin: '{{-?\\s*',
+        end: '\\s*-?}}',
         contains: [
           hljs.QUOTE_STRING_MODE,
           hljs.C_NUMBER_MODE,
           {
             className: 'literal',
-            begin: '\\b(true|false|null)\\b'
+            begin: '\\b(true|false|nil)\\b'
           },
           {
             className: 'operator',
