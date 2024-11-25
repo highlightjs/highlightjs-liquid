@@ -1,0 +1,11 @@
+{% assign greeting = "Hello World" %}
+{{ greeting | upcase }}
+
+<div class="product">
+  {% if product.available %}
+    <h2>{{ product.title }}</h2>
+    {% for variant in product.variants %}
+      {{ variant.price | money }}
+    {% endfor %}
+  {% endif %}
+</div>

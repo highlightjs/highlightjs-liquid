@@ -1,0 +1,12 @@
+<span class="hljs-template-tag">{% <span class="hljs-keyword">if</span> product.available %}</span>
+  <span class="hljs-template-tag">{% <span class="hljs-keyword">for</span> variant in product.variants %}</span>
+    <span class="hljs-template-tag">{% <span class="hljs-keyword">case</span> variant.title %}</span>
+      <span class="hljs-template-tag">{% <span class="hljs-keyword">when</span> <span class="hljs-string">'Small'</span> %}</span>
+        Small size
+      <span class="hljs-template-tag">{% <span class="hljs-keyword">when</span> <span class="hljs-string">'Medium'</span> %}</span>
+        Medium size
+      <span class="hljs-template-tag">{% <span class="hljs-keyword">else</span> %}</span>
+        Large size
+    <span class="hljs-template-tag">{% <span class="hljs-keyword">endcase</span> %}</span>
+  <span class="hljs-template-tag">{% <span class="hljs-keyword">endfor</span> %}</span>
+<span class="hljs-template-tag">{% <span class="hljs-keyword">endif</span> %}</span>

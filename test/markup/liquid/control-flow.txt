@@ -1,0 +1,12 @@
+{% if product.available %}
+  {% for variant in product.variants %}
+    {% case variant.title %}
+      {% when 'Small' %}
+        Small size
+      {% when 'Medium' %}
+        Medium size
+      {% else %}
+        Large size
+    {% endcase %}
+  {% endfor %}
+{% endif %}

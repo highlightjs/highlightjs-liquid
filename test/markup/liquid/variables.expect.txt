@@ -1,0 +1,3 @@
+<span class="hljs-template-tag">{% assign my_var = <span class="hljs-string">"test"</span> %}</span>
+<span class="hljs-template-variable">{{ my_var }}</span>
+<span class="hljs-template-variable">{{ product.title | <span class="hljs-function">escape</span> }}</span>

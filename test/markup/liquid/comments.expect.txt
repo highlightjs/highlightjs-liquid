@@ -1,0 +1,4 @@
+<span class="hljs-comment">{% comment %}
+  Multi-line comment
+  Another line
+{% endcomment %}</span>

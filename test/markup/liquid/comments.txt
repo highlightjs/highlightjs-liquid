@@ -1,0 +1,4 @@
+{% comment %}
+  Multi-line comment
+  Another line
+{% endcomment %}

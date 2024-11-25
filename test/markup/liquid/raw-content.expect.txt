@@ -1,0 +1,4 @@
+<span class="hljs-comment">{% raw %}
+  {{ This will not be processed }}
+  {% This either %}
+{% endraw %}</span>
