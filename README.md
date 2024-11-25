@@ -50,6 +50,7 @@ This package is released under the MIT License. See [LICENSE](LICENSE) file for 
 ### Author & Maintainer
 
 Laurel King <laurel.king@shopify.com>
+Mathieu Legault <mathieu.legault@shopify.com>
 
 ## Links
 
